@@ -10,6 +10,7 @@ function newImage(url, left, bottom){
 
 function newItem(url, left, bottom){
     let item = newImage(url, left, bottom)
+    //add click listener here
 }
 
 function newInventory(){
@@ -27,15 +28,18 @@ function newInventory(){
     inventory.style.backgroundColor = 'brown'
     document.body.append(inventory)
 }
-
+//this creates inventory bar
 newInventory()
+//this adds our character
 newImage('assets/green-character.gif', 100, 250)
+//this adds environment
 newImage('assets/tree.png', 200, 450)
 newImage('assets/pillar.png', 350, 250)
 newImage('assets/pine-tree.png', 450, 350)
 newImage('assets/crate.png', 150, 350)
 newImage('assets/well.png', 500, 575)
 
+//this adds our items that can be picked up
 newItem('assets/sword.png', 500, 555)
 newItem('assets/shield.png', 165, 335)
 newItem('assets/staff.png', 600, 250)
